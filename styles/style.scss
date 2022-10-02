@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 149, 0);
+    width: 100%;
+    height: 100vh;
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .parent{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 300px;
+                color: white;
+                font-size: $content-font-size;
+                position:absolute;
+
+            }
+
+            .top{
+                background-color: $top-color;
+                top: 35%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 100;
+            }
+
+            .left{
+                background-color: $left-color;
+                top: 25%;
+                left: 25%;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+
+            .right{
+                background-color: $right-color;
+                top: 25%;
+                left: 75%;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+
+            .back{
+                background-color: $back-color;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+
+                transition: all 0.2s;
+
+                &:hover{
+                    transform: scale(1.1);
+                    z-index: 101;
+                }
+            }
+        }
+    }
+}
+
+

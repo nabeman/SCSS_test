@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(230, 149, 0);
+  width: 100%;
+  height: 100vh;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .parent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .parent .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+}
+body main .parent .top {
+  background-color: rgb(209, 136, 0);
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+body main .parent .left {
+  background-color: rgb(204, 154, 162);
+  top: 25%;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+body main .parent .right {
+  background-color: rgb(170, 60, 60);
+  top: 25%;
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+body main .parent .back {
+  background-color: rgb(160, 160, 0);
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: all 0.2s;
+}
+body main .parent .back:hover {
+  transform: scale(1.1);
+  z-index: 101;
+}/*# sourceMappingURL=style.css.map */
